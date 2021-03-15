@@ -1,0 +1,110 @@
+/* GERAL */
+:root {
+  --color-black: #000;
+  --color-blue:  #4285F4;
+  --color-blue-hover:  #1e6beb;
+  --color-white: #fff;
+  --color-red: #EC5863;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+}
+body {
+  font: 1.6rem;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.space-btwn {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.center-y-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.transition {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.secondary-button {
+  background: var(--color-blue);
+  border-radius: 5px;
+  padding: 12px 32px;
+  color: var(--color-white)
+}
+.secondary-button:hover {
+  background: var(--color-blue-hover);
+}
+/* HEADER */
+.primary-header {
+  padding: 37px 0;
+  font-family: 'Raleway', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  box-sizing: border-box;
+}
+.primary-header .logo-container:hover .svg {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.primary-header .menu-container .list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.primary-header .menu-container .list-item .link {
+  font-weight: bold;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+  letter-spacing: 0.14em;
+  color: var(--color-black);
+  padding: 15px 10px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          display: block;
+}
+.primary-header .menu-container .list-item .link:last-child {
+  padding: 15px 0 15px 10px;
+}
+.primary-header .menu-container .list-item .link:hover {
+  -webkit-transform: translate3d(0, -5px, 0);
+          transform: translate3d(0, -5px, 0);
+}
+.primary-header .menu-container .secondary-button {
+  margin-left: 150px;
+}
+/* BANNER */
+.banner {
+  height: 500px;
+  position: relative;
+  padding: 124px 0 50px;
+}
+.banner:after {
+  content: '';
+  background: var(--color-red);
+  height: 100%;
+  width: 295px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 30px 0px 0px 30px;
+}
