@@ -20,6 +20,9 @@ body {
 .blue-text {
   color: var(--color-blue)
 }
+.red-text {
+  color: var(--color-red)
+}
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -88,6 +91,12 @@ body {
   right: 0;
   z-index: 5;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0);
+}
+.primary-header.fixed {
+  padding: 12px 0;
+  background: var(--color-white);
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
 }
 .primary-header .logo-container:hover .svg {
   -webkit-transform: scale(1.15);
@@ -137,19 +146,23 @@ body {
   z-index: -1;
 }
 .banner .text-content,
-.banner .image-content {
+.banner .image-content,
+.stay-safe .text-content,
+.stay-safe .image-content {
   width: 50%;
 }
 .banner .video-content {
   width: 100%;
 }
-.banner .text-content .title {
+.banner .text-content .title,
+.stay-safe .title {
   font-size: 4.4rem;
   line-height: 126%;
   margin-bottom: 12px;
   font-weight: bold;
 }
-.banner .text-content .description {
+.banner .text-content .description,
+.stay-safe .description {
   font-size: 1.2rem;
   line-height: 138.5%;
   margin-bottom: 24px;
@@ -184,4 +197,9 @@ body {
   letter-spacing: 0.165em;
   text-transform: uppercase;
   color: var(--color-black);
+}
+/* STAY SAFE */
+.stay-safe {
+  padding: 80px 0;
+  max-width: 1000px;
 }
