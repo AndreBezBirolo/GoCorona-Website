@@ -225,7 +225,7 @@ body {
   padding: 54px 0;
 }
 .talk-to-experts .container:first-child {
-  background: url('backgroundTalk.svg') center center no-repeat;
+  background: url('/images/backgroundTalk.svg') center center no-repeat;
   padding: 54px 0 45px;
 }
 .talk-to-experts .counter-container {
@@ -278,7 +278,7 @@ body {
 }
 .healthcare .cards-container {
   padding: 55px 0;
-  background: url('backgroundHealthcare.png') center center no-repeat;
+  background: url('/images/backgroundHealthcare.png') center center no-repeat;
   background-size: contain;
 }
 .healthcare .cards-container .card-item {
