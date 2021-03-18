@@ -14,6 +14,27 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   menuFixed();
 
+  function activeCounter(){
+    const counters = document.querySelectorAll('.counter-item .number');
 
+    counters.forEach(function(counter){
+        let updateCounter = function(){
+          let target = +counter.getAttribute('data-target'),
+              c = +counter.innerText,
+              increment = target / target;
+          if (counter.getAttribute('data-target') > 1000) {
+            increment = target / 100
+          }
+          if (c < target) {
+            counter.innerText = Math.ceil(c + increment);
+            setTimeout(updateCounter, 1);
+          } else {
+            counter.innerText = target;
+          }
+        }
+        updateCounter();
+    });
 
+  }
+  activeCounter();
 });
