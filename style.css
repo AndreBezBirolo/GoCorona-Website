@@ -276,3 +276,29 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+.healthcare .cards-container {
+  padding: 55px 0;
+  background: url('backgroundHealthcare.png') center center no-repeat;
+  background-size: contain;
+}
+.healthcare .cards-container .card-item {
+  background: var(--color-white);
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  max-width: 280px;
+  padding: 36px 16px;
+  margin: 0 36px;
+}
+.healthcare .cards-container .card-item svg {
+  margin-bottom: 58px;
+}
+.healthcare .cards-container .card-item .title {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+.healthcare .buttons-app a {
+  display: block;
+  margin: 0 30px;
+}
