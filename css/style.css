@@ -312,12 +312,12 @@ img {
 .talk-to-experts {
   background-color: var(--color-background-gray);
   padding: 54px 0;
-  margin: 0 15px;
+
 }
 
 @media (min-width: 769px) {
   .talk-to-experts .container:first-child {
-    background: url("images/backgroundTalk.svg") center center no-repeat;
+    background: url("./images/backgroundTalk.svg") center center no-repeat;
   }
 }
 .talk-to-experts .container:first-child {
@@ -353,6 +353,7 @@ img {
 }
 .talk-to-experts .content-container {
   padding: 45px 0;
+   margin: 0 15px;
 }
 
 .talk-to-experts .content-container .text-content {
