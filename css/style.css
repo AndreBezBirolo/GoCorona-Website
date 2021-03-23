@@ -317,7 +317,7 @@ img {
 
 @media (min-width: 769px) {
   .talk-to-experts .container:first-child {
-    background: url("./images/backgroundTalk.svg") center center no-repeat;
+    background: url("../images/backgroundTalk.svg") center center no-repeat;
   }
 }
 .talk-to-experts .container:first-child {
@@ -405,7 +405,7 @@ img {
 }
 .healthcare .cards-container {
   padding: 55px 0;
-  background: url("images/backgroundHealthcare.png") center center no-repeat;
+  background: url("../images/backgroundHealthcare.png") center center no-repeat;
   background-size: contain;
 }
 
